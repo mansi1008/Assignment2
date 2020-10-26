@@ -1,0 +1,7 @@
+Portfolio Test Account
+----------------------
+Username: mansi
+Password: 123
+
+Heroku Deployment: https://floating-eyrie-54310.herokuapp.com/
+Github Repo Link: 

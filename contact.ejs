@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+        <section class="contact">
+            <h1 class="caption">Contact</h1>
+            <table class="contact-table">
+                <tr>
+                    <td>Name</td>
+                    <td>Mansi Mehindru</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>mansimehindru9002@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Brampton, ON</td>
+                </tr>
+            </table>
+       </section>
+        <section class="contactform">
+            <h1 class="caption">Get in Touch</h1>
+            <p>
+                You can contact me via this form. I only entertain reasonable requests and I'm currently replying only those requests due to heavy workload. I wont join in on collaboration without mutual benefit.
+            </p>
+            <form method="GET" id="contact-form">
+                <input id="name" class="textbox" placeholder="Your Name"/>
+                <input id="email" class="textbox" placeholder="Your Email"/>
+                <input id="message" class="textbox" placeholder="Your Message"/>
+                <input class="button" type="submit" value="Send Message"/>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

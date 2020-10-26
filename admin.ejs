@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/headermini'); %>
+    </header>
+    <main id="main">
+        <section class="admin">
+            <h1 class="title">My Contact List</h1>
+            <table class="contact-list">
+                <tr>
+                    <th>Contact Name</th>
+                    <th>Contact Number</th>
+                    <th>Contact Email</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                <% for(var i=0; i < contact_list.length; i++) { %>
+                    <tr>
+                      <td><%= contact_list[i].name %></td>
+                      <td><%= contact_list[i].number %></td>
+                      <td><%= contact_list[i].email %></td>
+                      <td><a href="/update/<%= contact_list[i]._id %>"><i class="fas fa-edit"></i></a></td>
+                      <td><a href="/delete/<%= contact_list[i]._id %>"><i class="fas fa-trash-alt"></i></a></td>
+                    </tr>
+                 <% } %>
+            </table>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

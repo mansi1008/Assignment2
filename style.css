@@ -1,0 +1,472 @@
+/*
+	Name: Mansi Mehindru
+	Student ID: 301108725
+	Date: 2020-10-26
+*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: url("/public/images/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+p {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.logo {
+    max-width: 60px;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    display: inline-block;
+    transition: background-color 0.4s;
+    padding: 15px 20px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
+    border-radius: 5px;
+    margin: 20px 0;
+    max-width: 150px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+section .caption {
+    font-size: 38px;
+    margin-top: 20px;
+}
+
+.contact-table {
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.contact-table td {
+    padding: 15px;
+    min-width: 120px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.image-card-1 {
+    position: relative;
+    max-width: 370px;
+    min-width: 300px;
+    background: #fff;
+    color: #000;
+    border: 4px solid #eb06bd;
+}
+.image-card-1 .image {
+    position: relative;
+    width: 100%;
+}
+.image-card-1 img {
+    width: 100%;
+    height: 300px;
+    margin-left: -0.2px;
+}
+.image-card-1 .content p {
+    margin: 10px 0;
+    padding: 20px 20px;
+}
+.image-card-1 .title {
+    position: relative;
+    color: black;
+    font-size: 24px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.image-card-1 .nav {
+    border-top: 1px solid #ddd;
+    padding: 15px 20px;
+}
+.image-card-1 .nav a {
+    color: rgb(144, 148, 144);
+    display: inline-block;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.image-card-1 .nav a:not(:first-of-type) {
+    margin: 0 10px;
+}
+.image-card-1 .nav a:hover {
+    color: #000;
+}
+
+#header {
+    width: 100%;
+    background: #76448a;
+    color: white;
+}
+#header .inner {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+#header .nav-container {
+    display: inline-block;
+    margin: 0 0 0 auto;
+    text-align: center;
+}
+#header .nav-container .fas {
+    font-size: 22px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+#header nav a {
+    margin: 0 15px;
+}
+#header nav a:hover {
+    color: #c39bd3;
+}
+
+#footer {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: #76448a;
+}
+#footer .copyright {
+    text-align: center;
+    margin: 10px auto;
+}
+
+@media (max-width: 700px) {
+    #header .inner {
+        display: block;
+        text-align: center;
+    }
+    #header .logo {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    #header nav a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-projects .cards-container {
+        display: block !important;
+        text-align: center;
+    }
+    .section-projects .image-card-1 {
+        display: block;
+        margin: 50px auto !important;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome-message {
+    background: rgba(255, 255, 255, 1);
+    max-width: 700px;
+    margin: 100px auto 50px auto;
+    min-width: 330px;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 0;
+}
+.welcome-message .title {
+    font-size: 34px;
+    color: #eb06bd;
+}
+.quote {
+    margin: 50px auto 100px auto;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1em;
+    border-radius: 0;
+    border: 1px solid plum;
+}
+.quote figcaption,
+.quote blockquote {
+    margin: 1em;
+}
+
+.aboutme {
+    border-radius: 10px;
+    color: #000;
+    max-width: 1000px;
+    padding: 20px;
+    background: #fff;
+    margin: 50px auto;
+}
+.aboutme .picture {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+.aboutme .description {
+    margin: 40px 0;
+    max-width: 700px;
+}
+.aboutme-title {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.projects {
+    padding: 100px 20px;
+}
+.projects .section-title {
+    font-size: 48px;
+    margin-bottom: 90px;
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+}
+.projects .cards-container {
+    display: flex;
+    justify-content: center;
+}
+.projects .image-card-1 {
+    margin: 0 25px;
+}
+
+.services {
+    max-width: 1300px;
+    margin: 100px auto;
+    text-align: center;
+}
+.services .col-left {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 45%;
+    margin: 0 30px;
+}
+.services .col-right {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 45%;
+    margin: 0 30px;
+}
+.services .section-title {
+    font-size: 48px;
+    margin-bottom: 80px;
+    color: #fff;
+}
+.services .service {
+    max-width: 800px;
+    margin: 70px auto;
+    color: black;
+    text-align: left;
+}
+.services .service .trigger {
+    background: #eb06bd;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+.services .service .service-content {
+    background: white;
+    width: 100%;
+    padding: 20px;
+    min-height: 130px;
+}
+.services .service .service-content:not(:first-of-type) {
+    display: none;
+}
+
+.contact {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+}
+.contactform {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+}
+.contactform .textbox {
+    border: 2px solid #eb06bd;
+    display: block;
+    border-radius: 5px;
+    max-width: 360px;
+    min-width: 300px;
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.login {
+    max-width: 380px;
+    padding: 20px;
+    margin: 70px auto;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+.login .caption {
+    font-size: 48px;
+    color: #eb06bd;
+}
+
+.admin {
+    max-width: 1100px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.admin .title {
+    margin: 10px 0;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.contact-list {
+    border-collapse: collapse;
+    min-width: 600px;
+    border-radius: 0px;
+    overflow: hidden;
+    color: black;
+    margin: 100px auto;
+}
+.contact-list th {
+    background: #eb06bd;
+    color: white;
+    padding: 20px;
+}
+.contact-list td {
+    padding: 15px;
+}
+.contact-list tr:nth-child(even) {
+    background: #eee;
+}
+.contact-list tr:nth-child(odd) {
+    background: #ddd;
+}
+.contact-list a {
+    display: block;
+    background: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.contact-list a:hover {
+    background: #555;
+}
+
+.update {
+    max-width: 580px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+.update .form-s1 {
+    margin: 0 auto;
+    text-align: center;
+}
+.update .form-s1 .textbox {
+    width: 100%;
+}
+.update .title {
+    margin: 10px 0;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form .fieldgroup {
+    padding: 20px 0;
+}
+.form .textbox {
+    border: none;
+    padding: 5px 0;
+    font-size: 16px;
+    outline: none;
+    border-bottom: 3px solid black;
+    width: 100%;
+    max-width: 240px;
+}
+.form .textbox:focus {
+    border-color: #eb06bd;
+}
+.form .button {
+    background: black;
+    min-width: 120px;
+    text-align: center;
+    color: white;
+    border-radius: 0;
+    margin-top: 0;
+}
+.form .button:hover {
+    background-color: #555;
+}
+
+.account-controls {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+.account-controls a {
+    min-width: 100px;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+}

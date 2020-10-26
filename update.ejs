@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/headermini'); %>
+    </header>
+    <main id="main">
+        <section class="update" style="margin:100px auto" >
+            <form method="GET" action=""id="login-form" class="form">
+                <h1 class="caption">Update Contact</h1>
+                <p>Leave the fields empty if they are not to be updated</p>
+                <div class="fieldgroup"><input autocomplete="off" type="text" name="name" class="textbox" placeholder="Contact Name"/></div>
+                <div class="fieldgroup"><input type="password" name="number" class="textbox" placeholder="Contact Number"/></div>
+                <div class="fieldgroup"><input type="password" name="email" class="textbox" placeholder="Contact Email"/></div>
+                <div class="fieldgroup">
+                <br/>
+                    <input class="button" type="submit" value="Update Contact"/>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>
